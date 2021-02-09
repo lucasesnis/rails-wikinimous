@@ -1,0 +1,7 @@
+<h1> Article Detail </h1>
+<p> <%= @article.title %> </p>
+<p><strong>Descrition:</strong> <%= @article.content %> </p>
+
+<%= link_to("Edit", edit_article_path(@article)) %> <br>
+<%= link_to("Back to articles", articles_path) %> <br>
+<%= link_to('Destroy', article_path(@article), method: :delete) %>
